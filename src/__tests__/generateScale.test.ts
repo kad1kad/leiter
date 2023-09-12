@@ -1,4 +1,4 @@
-import { generateScale } from "../generateScale";
+import { generateScale } from "../scales/generateScale";
 
 describe("generateScale function", () => {
   it("should increment the octave", () => {
