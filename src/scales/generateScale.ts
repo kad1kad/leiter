@@ -35,5 +35,3 @@ export function generateScale(
 
   return scale;
 }
-
-generateScale("A", 4, "major");
