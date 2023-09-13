@@ -1,0 +1,20 @@
+# Ignore TypeScript source files
+src/
+
+# Ignore configuration files
+tsconfig.json
+jest.config.js
+
+# Ignore test files
+__tests__/
+
+# Ignore node_modules
+node_modules/
+
+# Ignore any logs
+*.log
+
+# Ignore other non-essential files
+*.tsbuildinfo
+.yarn/
+.npm/
