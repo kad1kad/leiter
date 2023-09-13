@@ -25,6 +25,22 @@ const scale = generateScale('A', 4, 'major');
 console.log(scale);  // ['A4', 'B4', 'C#5', 'D5', 'E5', 'F#5', 'G#5', 'A5']
 ````
 
+## API
+`generateScale(tonic: string, octave: number, scaleName: ScaleName): string[]`
+
+### Parameters:
+- `tonic (string)`: The root or starting note of the scale. It should be one of the standard note names (e.g., "C", "D#", "Fb").
+- `octave (number)`: The octave in which the scale is to be generated. Typically represented as numbers like 3, 4, 5, etc., where "C4" is the Middle C.
+- `scaleName (ScaleName)`: The name of the scale pattern you want to generate. The library supports a vast array of scales, from standard major and minor scales to unique scales from diverse global traditions.
+
+### Returns:
+An array of `string` values, each representing a note with it's pitch in the generated scale.
+
+### ScaleName Type
+```typescript
+type ScaleName = "major" | "minor" | "harmonicMinor" | "melodicMinor" | "pentatonicMajor" | "pentatonicMinor" | "bluesMinor" | "bluesMajor" | "phrygian" | "locrian" | "dorian" | "mixolydian" | "lydian" | "wholeTone" | "diminishedWholeHalf" | "diminishedHalfWhole" | "augmented" | "doubleHarmonic" | "hungarianGypsy" | "hungarianMinor" | "neapolitanMinor" | "neapolitanMajor" | "persian" | "romanianMinor" | "hirajoshi" | "inSen" | "iwato" | "kumoi" | "slendro" | "pelog" | "chineseMajor" | "chineseMinor" | "ragaBhairavi" | "ragaKafi" | "balinese";
+```
+
 ## Supported Scales
 
 | Scale Name           | Formula                                     | Description                            |
