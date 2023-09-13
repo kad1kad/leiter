@@ -6,7 +6,7 @@ Leiter is a TypeScript-based library designed to generate musical scales based o
 - **Generate Scales**: Easily retrieve scales based on the tonic, octave, and desired scale type.
 - **TypeScript Support**: Built with TypeScript for type-safety and developer experience.
 - **Expandable**: Developers can extend and add more scales as needed.
-- **Streamlined and Lightweigt**: Lean design without excess, clocking in at just 11.4 kB unpacked size.
+- **Streamlined and Lightweight**: Lean design without excess, clocking in at just 11.4 kB unpacked size.
 
 ## Installation
 
