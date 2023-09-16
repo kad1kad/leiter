@@ -30,7 +30,7 @@ console.log(scale);  // ['A4', 'B4', 'C#5', 'D5', 'E5', 'F#5', 'G#5', 'A5']
 `generateScale(tonic: string, octave: number, scaleName: ScaleName): string[]`
 
 ### Parameters:
-- `tonic (string)`: The root or starting note of the scale. It should be one of the standard note names (e.g., "C", "D#", "Fb").
+- `tonic (string)`: The root or starting note of the scale. It should be one of the standard note names (e.g., "C", "D#").
 - `octave (number)`: The octave in which the scale is to be generated. Typically represented as numbers like 3, 4, 5, etc., where "C4" is the Middle C.
 - `scaleName (ScaleName)`: The name of the scale pattern you want to generate. The library supports a vast array of scales, from standard major and minor scales to unique scales from diverse global traditions.
 
@@ -84,6 +84,6 @@ type ScaleName = "major" | "minor" | "harmonicMinor" | "melodicMinor" | "pentato
 
 
 
-## Contributing
+## To Do:
 
-Feel free to fork the repository, make changes, and submit pull requests. Contributions are welcome!
+- [ ] Add support for flat notes as tonic
