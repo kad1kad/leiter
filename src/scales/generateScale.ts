@@ -1,13 +1,13 @@
 import { NOTES } from "../utils/notes";
 import { SCALE_FORMULAS } from "../utils/scaleFormulas";
-import { ScaleName } from "../utils/types";
+import { ScaleType, NoteType } from "../utils/types";
 
 type Note = string;
 
 export function generateScale(
-  tonic: string,
+  tonic: NoteType,
   octave: number,
-  scaleName: ScaleName
+  scaleName: ScaleType
 ): Note[] {
   if (!SCALE_FORMULAS[scaleName]) {
     throw new Error(`Unknown scale: ${scaleName}`);
