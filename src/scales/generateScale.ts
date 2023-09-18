@@ -10,11 +10,12 @@ export function generateScale(
   scaleName: ScaleName
 ): Note[] {
   if (!SCALE_FORMULAS[scaleName]) {
-    throw new Error(`Unknown scaleName: ${scaleName}`);
+    throw new Error(`Unknown scale: ${scaleName}`);
   }
 
   const formula = SCALE_FORMULAS[scaleName];
   const startingIndex = NOTES.indexOf(tonic);
+
   if (startingIndex === -1) {
     throw new Error(`Unknown tonic: ${tonic}`);
   }
