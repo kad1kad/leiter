@@ -30,7 +30,7 @@ console.log(scale);  // ['A4', 'B4', 'C#5', 'D5', 'E5', 'F#5', 'G#5', 'A5']
 `generateScale(tonic: string, octave: number, scaleName: ScaleName): string[]`
 
 ### Parameters:
-- `tonic (NoteType)`: The root or starting note of the scale. It should be one of the standard note names (e.g., "C", "D#"). Please note that flat notes are note supported for the current release. Instead use the aquavalent sharp note.
+- `tonic (NoteType)`: The root or starting note of the scale. It should be one of the standard note names (e.g., "C", "D#"). Please note that flat notes are note supported in the current release. Instead use the aquavalent sharp note.
 - `octave (Octave)`: The octave in which the scale is to be generated. Represented as numbers between 0 - 8, where "C4" is the Middle C.
 - `scaleName (ScaleType)`: The name of the scale pattern you want to generate. The library supports a vast array of scales, from standard major and minor scales to unique scales from diverse global traditions.
 
@@ -39,7 +39,7 @@ An array of `string` values, each representing a note with it's pitch in the gen
 
 ### Scale Type
 ```typescript
-type ScaleName = "major" | "minor" | "harmonicMinor" | "melodicMinor" | "pentatonicMajor" | "pentatonicMinor" | "bluesMinor" | "bluesMajor" | "phrygian" | "locrian" | "dorian" | "mixolydian" | "lydian" | "wholeTone" | "diminishedWholeHalf" | "diminishedHalfWhole" | "augmented" | "doubleHarmonic" | "hungarianGypsy" | "hungarianMinor" | "neapolitanMinor" | "neapolitanMajor" | "persian" | "romanianMinor" | "hirajoshi" | "inSen" | "iwato" | "kumoi" | "slendro" | "pelog" | "chineseMajor" | "chineseMinor" | "ragaBhairavi" | "ragaKafi" | "balinese";
+type ScaleType = "major" | "minor" | "harmonicMinor" | "melodicMinor" | "pentatonicMajor" | "pentatonicMinor" | "bluesMinor" | "bluesMajor" | "phrygian" | "locrian" | "dorian" | "mixolydian" | "lydian" | "wholeTone" | "diminishedWholeHalf" | "diminishedHalfWhole" | "augmented" | "doubleHarmonic" | "hungarianGypsy" | "hungarianMinor" | "neapolitanMinor" | "neapolitanMajor" | "persian" | "romanianMinor" | "hirajoshi" | "inSen" | "iwato" | "kumoi" | "slendro" | "pelog" | "chineseMajor" | "chineseMinor" | "ragaBhairavi" | "ragaKafi" | "balinese";
 ```
 ### Note Type
 ```typescript
