@@ -1,12 +1,12 @@
 import { NOTES } from "../utils/notes";
 import { SCALE_FORMULAS } from "../utils/scaleFormulas";
-import { ScaleType, NoteType } from "../utils/types";
+import { ScaleType, NoteType, Octave } from "../utils/types";
 
 type Note = string;
 
 export function generateScale(
   tonic: NoteType,
-  octave: number,
+  octave: Octave,
   scaleName: ScaleType
 ): Note[] {
   if (!SCALE_FORMULAS[scaleName]) {
