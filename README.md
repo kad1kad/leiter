@@ -13,7 +13,7 @@ Leiter is a TypeScript-based library designed to generate musical scales based o
 Using npm:
 ```bash
 npm install leiter
-````
+```
 
 ## Usage
 
@@ -30,16 +30,24 @@ console.log(scale);  // ['A4', 'B4', 'C#5', 'D5', 'E5', 'F#5', 'G#5', 'A5']
 `generateScale(tonic: string, octave: number, scaleName: ScaleName): string[]`
 
 ### Parameters:
-- `tonic (string)`: The root or starting note of the scale. It should be one of the standard note names (e.g., "C", "D#").
-- `octave (number)`: The octave in which the scale is to be generated. Typically represented as numbers like 3, 4, 5, etc., where "C4" is the Middle C.
-- `scaleName (ScaleName)`: The name of the scale pattern you want to generate. The library supports a vast array of scales, from standard major and minor scales to unique scales from diverse global traditions.
+- `tonic (NoteType)`: The root or starting note of the scale. It should be one of the standard note names (e.g., "C", "D#"). Please note that flat notes are note supported for the current release. Instead use the aquavalent sharp note.
+- `octave (Octave)`: The octave in which the scale is to be generated. Represented as numbers between 0 - 8, where "C4" is the Middle C.
+- `scaleName (ScaleType)`: The name of the scale pattern you want to generate. The library supports a vast array of scales, from standard major and minor scales to unique scales from diverse global traditions.
 
 ### Returns:
 An array of `string` values, each representing a note with it's pitch in the generated scale.
 
-### ScaleName Type
+### Scale Type
 ```typescript
 type ScaleName = "major" | "minor" | "harmonicMinor" | "melodicMinor" | "pentatonicMajor" | "pentatonicMinor" | "bluesMinor" | "bluesMajor" | "phrygian" | "locrian" | "dorian" | "mixolydian" | "lydian" | "wholeTone" | "diminishedWholeHalf" | "diminishedHalfWhole" | "augmented" | "doubleHarmonic" | "hungarianGypsy" | "hungarianMinor" | "neapolitanMinor" | "neapolitanMajor" | "persian" | "romanianMinor" | "hirajoshi" | "inSen" | "iwato" | "kumoi" | "slendro" | "pelog" | "chineseMajor" | "chineseMinor" | "ragaBhairavi" | "ragaKafi" | "balinese";
+```
+### Note Type
+```typescript
+export type NoteType = "C" | "C#" | "D" | "D#" | "E"  | "F"  | "F#" | "G"  | "G#" | "A"  | "A#" | "B";
+```
+### Octave Type
+```typescript
+export type Octave = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 ```
 
 ## Supported Scales
