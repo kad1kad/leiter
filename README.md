@@ -93,7 +93,3 @@ export type Octave = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 | Balinese             | 1, 3, 2, 4, 2                               | Associated with Balinese gamelan music |
 
 
-
-## To Do:
-
-- [ ] Add support for flat notes as tonic
